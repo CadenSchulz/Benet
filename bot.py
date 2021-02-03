@@ -9,4 +9,4 @@ client = commands.Bot(command_prefix = '-')
 async def on_ready():
     print('Benet Bot is ready.')
 
-client.run('HIDDEN')
+client.run('ENTER YOUR BOT TOKEN HERE')
