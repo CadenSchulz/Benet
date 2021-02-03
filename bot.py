@@ -1,3 +1,5 @@
+# THIS IS THE MAIN FILE
+
 import discord
 from discord.ext import commands
 
