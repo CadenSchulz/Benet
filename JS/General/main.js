@@ -55,7 +55,7 @@ client.on('message', message => {
 // 	member.guild.channels.cache.get('806413327403450401').send({ embed })
 // });
 
-client.login('ODA2NjUyNjg2ODkyMTM4NTI2.YBsj2w.IpuI4DFn72Dp6PX0WqXjbRD_Ics');
+client.login('TOKEN GOES HERE');
 
 
 
