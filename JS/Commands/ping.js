@@ -5,8 +5,9 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setDescription(`🏓Latency is ${Date.now() - message.createdTimestamp}ms`)
-        .setFooter('Benet Academy ©');
-    
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+        .setFooter('ENTER SERVER NAME HERE ©');
+///////////////////////////////////////////////////////////////////////////////////////////////////////
         message.channel.send(newEmbed);
     }
 }
