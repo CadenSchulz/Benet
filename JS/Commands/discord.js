@@ -8,8 +8,9 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')
         .setTitle('**__Permanent Invite Link__**')
-// ENTER YOUR  SERVER LINK
+///////////////////////////////////////////////////////////////////////////////////////////////////////
         .setDescription(`PUT YOUR SERVER'S LINK HERE`)
+///////////////////////////////////////////////////////////////////////////////////////////////////////
         .setFooter('ENTER SERVER NAME HERE ©')
         .setTimestamp();
 
