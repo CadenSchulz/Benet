@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-
-const prefix = '-';
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+const prefix = 'YOUR PREFIX HERE'; // Mine is '-'
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 const fs = require('fs');
 
 client.commands = new Discord.Collection();
@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 
 
 client.once('ready', () => {
-    console.log('testbot is online!');
+    console.log('THE BOT is online!');
     client.user.setActivity('for people who use discord.js :)', { type: 'WATCHING' });
 });
 
@@ -56,9 +56,9 @@ client.on('guildMemberAdd', (member) => {
 	member.guild.channels.cache.get('806413327403450401').send({ embed })
 });
 
-
-client.login('TOKEN GOES HERE');
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+client.login('YOUR BOT TOKEN GOES HERE');
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
