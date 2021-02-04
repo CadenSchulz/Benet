@@ -18,6 +18,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('testbot is online!');
+    client.user.setActivity('for people who use discord.js :)', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
@@ -43,17 +44,18 @@ client.on('message', message => {
 
 
 
-// const { Client, Collection, MessageEmbed } = require("discord.js");
+const { Client, Collection, MessageEmbed } = require("discord.js");
 
-// client.on('guildMemberAdd', (member) => {
-// 	const embed = new MessageEmbed()
-// 		.setTitle(`Welcome to Benet Coding`)
-// 		.setColor('#f3f3f3')
-// 		.setThumbnail(member.user.displayAvatarURL())
-// 		.setTimestamp()
-// 		.addField("Name", member.user.username)
-// 	member.guild.channels.cache.get('806413327403450401').send({ embed })
-// });
+client.on('guildMemberAdd', (member) => {
+	const embed = new MessageEmbed()
+		.setTitle(`Welcome to Benet Coding`)
+		.setColor('#f3f3f3')
+		.setThumbnail(member.user.displayAvatarURL())
+		.setTimestamp()
+		.addField("Name", member.user.username)
+	member.guild.channels.cache.get('806413327403450401').send({ embed })
+});
+
 
 client.login('TOKEN GOES HERE');
 
