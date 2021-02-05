@@ -24,7 +24,7 @@ class Eval(commands.Cog):
         self._last_result = None
 
     @commands.command(name='eval', aliases=["e"])
-    @commands.is_owner()
+    # @commands.is_owner()
     async def eval_(self, ctx, *, body: str):
         """Runs code that you input to the command"""
 
