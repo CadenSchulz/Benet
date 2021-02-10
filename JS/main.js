@@ -22,4 +22,4 @@ client.on('guildMemberAdd', (member) => {
 });
 
 
-client.login(process.env.DISCORD_TOKEN);
+client.login('YOUR DISCORD TOKEN HERE'); // ENTER YOUR TOKEN HERE!!!!!!!!!!
