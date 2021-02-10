@@ -1,6 +1,6 @@
 module.exports = {
     name: 'ping',
-    aliases: ['ms','wifi','connection','signal','botwifi','botconnection'],
+    aliases: ['p','ms','wifi','connection','signal','botwifi','botconnection'],
     cooldown: 3,
     description: "Embed for ping Command",
     execute(client, message, args, Discord){
