@@ -2,9 +2,10 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "user",
-    aliases: ['person', 'me', 'you', 'person info', 'users'],
+    aliases: ['person', 'me', 'you', 'personinfo', 'users', 'userinfo'],
+    cooldown: 3,
     category: "Commands",
-    execute(message, args, Discord){
+    execute(client, message, args, Discord){
         let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 
         let status;

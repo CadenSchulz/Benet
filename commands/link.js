@@ -1,7 +1,9 @@
 module.exports = {
     name: 'link',
+    aliases: ['discord','lnk','permalink','permanentlink','invitesomeone','lk','links'],
+    cooldown: 3,
     description: "Embed for link Command",
-    execute(message, args, Discord){
+    execute(client, message, args, Discord){
         let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#f3f3f3')

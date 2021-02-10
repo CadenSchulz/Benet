@@ -1,7 +1,9 @@
 module.exports = {
     name: 'server',
+    aliases: ['serverinfo','srver','sever','serve','infoserver','info'],
+    cooldown: 3,
     description: "Embed for server Command",
-    execute(message, args, Discord) {
+    execute(client, message, args, Discord) {
       const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL())
         .setColor('#f3f3f3')
