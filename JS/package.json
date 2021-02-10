@@ -13,6 +13,7 @@
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
-    "images-scraper": "^6.0.0"
+    "images-scraper": "^6.0.0",
+    "weather-js": "^2.0.0"
   }
 }
