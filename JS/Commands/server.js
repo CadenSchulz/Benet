@@ -1,7 +1,9 @@
 module.exports = {
     name: 'server',
+    aliases: ['serverinfo','srver','sever','serve','infoserver','info'],
+    cooldown: 3,
     description: "Embed for server Command",
-    execute(message, args, Discord) {
+    execute(client, message, args, Discord) {
       const newEmbed = new Discord.MessageEmbed()
         .setAuthor(message.guild.name, message.guild.iconURL())
         .setColor('#f3f3f3')
@@ -15,16 +17,12 @@ module.exports = {
           },
           {
             name: ':small_blue_diamond: Bot Count',
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-            value: `YOUR NUMBER OF BOTS HERE`,
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+            value: `2 Bots`,
             inline: true
           },
           {
             name: ':small_blue_diamond: Bots',
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-            value: `<@ YOUR BOT ROLE ID HERE >, <@ YOUR BOT ROLE ID HERE >`,
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+            value: `<@806527279785312297>, <@806652686892138526>`,
             inline: true
           },
           {
@@ -34,9 +32,7 @@ module.exports = {
           },
           {
             name: ':small_blue_diamond: Roles',
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-            value: "<@& YOUR ROLE ID HERE > <@& YOUR ROLE ID HERE > ",
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+            value: "<@&806427047689322497> <@&806422588447653921> ",
             inline: true
           },
           {
@@ -61,23 +57,17 @@ module.exports = {
           },
           {
             name: ':small_blue_diamond: Date Created',
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-            value: `ENTER THE DATE YOUR SERVER WAS CREATED (MM/DD/YYYY)`,
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+            value: `February 2rd, 2021`,
             inline: true
           },
           {
             name: ':small_blue_diamond: Time Created',
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-            value: `ENTER THE TIME YOUR SERVER WAS CREATED FOLLOWED BY AM OR PM`,
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+            value: `10:14 PM`,
             inline: true
           }
         )
         .setTimestamp()
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-        .setFooter('ENTER SERVER NAME HERE ©');
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+        .setFooter('Benet Academy ©');
   
       message.channel.send(newEmbed);
     }

@@ -2,38 +2,25 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "user",
-    aliases: ['person', 'me', 'you', 'person info', 'users'],
+    aliases: ['person', 'me', 'you', 'personinfo', 'users', 'userinfo'],
+    cooldown: 3,
     category: "Commands",
-    execute(message, args, Discord){
+    execute(client, message, args, Discord){
         let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
-        
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//        THIS WHOLE NEXT PART WILL NOT WORK UNLESS YOU MAKE AN EMOJI OF EACH OF THE FOLLOWING: Online, Offline, Do Not Disturb, Idle.
-//          --Then in your discord channel, type \ followed by the emoji. This will give you the Emoji Prefix and ID of the emoji--
-//              --Example: (:online:806673127303544882)
-//              --Example: (:dnd:806673148538912858)
-//              --Example: (:idle:806673170429378670)
-//              --Example: (:offline:806673140339572777)
-//          --ENTER YOUR EMOJI PREFIX AND ID BELOW THIS--
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         let status;
         switch (user.presence.status) {
             case "online":
                 status = "Online <:online:806673127303544882>";
-                                    //Yours ABOVE
                 break;
             case "dnd":
                 status = "Do Not Disturb <:dnd:806673148538912858>";
-                                    ////Yours ABOVE
                 break;
             case "idle":
                 status = "Idle <:idle:806673170429378670>";
-                                    //Yours ABOVE
                 break;
             case "offline":
                 status = "Offline <:offline:806673140339572777>";
-                                    //Yours ABOVE
                 break;
         };
 
@@ -86,9 +73,7 @@ module.exports = {
                     inline: true
                 }
             )
-/////////////////////////////////////////////////////////////////////////
-// THE FOLLOWING IS NOT REQUIRED, BUT IT ADDS REACTIONS TO THE MESSAGE //
-/////////////////////////////////////////////////////////////////////////
+
         message.channel.send(embed).then(message => {
             message.react('🇬')
             message.react('🇷');
@@ -97,8 +82,5 @@ module.exports = {
             message.react('🇹')
             message.react('❔');
         })
-/////////////////////////////////////////////////////////////////////////
-        
-        
     }
 }
