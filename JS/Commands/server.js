@@ -73,15 +73,15 @@ module.exports = {
     }
   }
   
-  exports.conf = {
-    enabled: true,
-    aliases: ['info', 'stats', 'serverstats', 'guildinfo', 'guildstats'],
-    permLevel: 0
-  };
+  // exports.conf = {
+  //   enabled: true,
+  //   aliases: ['info', 'stats', 'serverstats', 'guildinfo', 'guildstats'],
+  //   permLevel: 0
+  // };
   
-  exports.help = {
-    name: 'server',
-    description: 'Displays server information & statistics',
-    usage: 'server',
-    category: 'commands',
-  };
+  // exports.help = {
+  //   name: 'server',
+  //   description: 'Displays server information & statistics',
+  //   usage: 'server',
+  //   category: 'commands',
+  // };
