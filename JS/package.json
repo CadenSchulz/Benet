@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "anti-link-discord": "^1.0.4",
+    "config.json": "0.0.4",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
