@@ -1,2 +1,0 @@
-# Benet
-Benet Coding Repository
