@@ -1,4 +1,5 @@
 const { MessageAttachment } = require('discord.js');
+// const db = require('quick.db')
 
 require('dotenv').config();
 
